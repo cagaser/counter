@@ -4,86 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Counter</title>
-    <style>
-        body {
-            background-color: darkslategray;
-            margin: 0px;
-        }
-        .main-wrapper {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            height: 100vh;
-        }
 
-        
-        .item {
-            color: white
-        }
-
-  
-        button {
-            padding: 20px;
-            background-color: rgb(222, 228, 222);
-            height: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-
-        }
-
-        .item.decrBtn {
-            background-color: rgb(117, 8, 103);
-            grid-column: 2 / 3;
-            grid-row: 4 / 5;
-        }
-
-        .item.resBtn {
-            background-color: rgb(11, 68, 11);
-            grid-column: 3 / 4;
-            grid-row: 4 / 5;
-        }
-
-        .item.incrBtn {
-            background-color: rgb(26, 56, 139);
-            grid-column: 4 / 5;
-            grid-row: 4 / 5;
-
-        }
-
-
-        .item.title {
-            background-color: rgb(128, 145, 190);
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-
-        }
-
-        .item.number {
-            background-color: rgb(115, 119, 131);
-            grid-column: 3 / 4;
-            grid-row: 3 / 4;
-        }
-
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #decrBtn:hover {
-            border-radius: 90px;
-        }
-
-        #number {
-            font-size: 800%;
-            margin: 0px;
-        }
-
-
-    </style>
 </head>
 <body>
     <div class="main-wrapper">
