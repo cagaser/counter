@@ -1,87 +1,44 @@
-
 body {
-    background-color: darkslategray;
-    margin: 0px;
+    background-image: linear-gradient(to right, rgba(14, 1, 1, 0), rgb(194, 194, 194));
 }
-.main-wrapper {
+.wrapper{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
-}
-
-
-.item {
-    color: white
-}
-
-button {
-    padding: 20px;
-    background-color: rgb(222, 228, 222);
-    height: 10px;
-    width: 130px;
-    display: flex;
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-
+    text-align: center;
 }
 
-.item.decrBtn {
-    /* background-color: rgb(117, 8, 103); */
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    justify-content: end;
-    align-items: baseline;
-}
-
-.item.resBtn {
-    /* background-color: rgb(11, 68, 11); */
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
-    align-items: baseline;
-}
-
-.item.incrBtn {
-    /* background-color: rgb(26, 56, 139); */
-    grid-column: 4 / 5;
-    grid-row: 4 / 5;
-    justify-content: start;
-    align-items: baseline;
-
-}
-
-
-.item.title {
-    background-color: rgb(128, 145, 190);
-    grid-column: 2 / 5;
-    grid-row: 2 / 3;
-
-}
-
-.item.number {
-    background-color: rgb(115, 119, 131);
-    grid-column: 2 / 5;
-    grid-row: 3 / 4;
-    color: green;
-    margin-bottom: 10px;
-}
-
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#title {
+    color: rgb(113, 145, 113);
+    grid-row: span 2;
+    align-self:flex-end;
+    margin: 0;
+    font-size: 5em;
+    font-family: 'Monofett';
 }
 
 #number {
-    font-size: 200px;
+    color: rgb(113, 145, 113);
+    font-size: 100px;
+    font-family: 'Oswald';
     margin: 0;
 }
 
-.title {
-    font-size: 30px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-content: end;
+button {
+    background-color: rgb(77, 70, 70);
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#decrBtn:hover {
+    background-color: tomato;
+}
+
+#incrBtn:hover {
+    background-color: cornflowerblue;
+}
+
+#resBtn:hover {
+    background-color: rgb(113, 145, 113);
 }
